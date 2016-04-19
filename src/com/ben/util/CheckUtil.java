@@ -1,13 +1,11 @@
 package com.ben.util;
 
-import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 public class CheckUtil {
 
-	private static final String token="ben";
+	private static final String token="benboss";
 	public static boolean checkSingture(String signature,String timestamp,String nonce){
 		String[] arr = new String[]{token, timestamp, nonce};
 		Arrays.sort(arr);
